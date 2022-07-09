@@ -1,13 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ola mundo</h1>
-    <p>ola brasil e manaus</p>
+    <!-- INICIO DA SECAO -->
+ 
+        <div class="container">
+            <!-- TEXTO SUPERIOR -->
+            <h1>Encerrar a conta na NellBux</h1>
+
+            <!-- INICIO -->
+            <div class="caixa">
+                <p class="subtitulo">Tem certeza que deseja fechar sua conta?</p>
+                <p>Se você fechar a sua conta na NellBux não será capaz de fazer login, nem receber qualquer comunicação do site. Fechar sua conta significa que você não terá acesso aos projetos que você esta desenvolvendo (os que você postou e os projetos dos quais está participando também).</p>
+            </div>
+            <span id="inferior">Preencha o formulário abaixo com seus comentários. Eles vão ajudar a melhorar a NellBux no futuro.</span>
+            <!-- FIM -->
+        </div>
+        
+        
+        <div class="container">
+            <form action="" method="">
+                <div class="formulario">
+                        <p class="texto-select">Motivo do fechamento</p>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">-- Escolha uma razão --</option>
+                            <option value="" class="opcao">OPÇÃO 1</option>
+                            <option value="" class="opcao">OPÇÃO 2</option>
+                            <option value="" class="opcao">OPÇÃO 3</option>
+                        </select>
+                    </div>
+                    <span style="color:red;";>Esse campo é obrigatório.</span>
+                </div>
+                
+                <div class="formulario">
+                    <p class="subtitulo">Comentários: Por favor, diga os motivos pelos quais decidiu encerrar sua conta e/ou nos deixe sugestões para melhoras que você acredita que possamos implementar na NellBux.</p>
+                    <div class="textarea">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="-- Escolha uma razão --"></textarea>
+                    </div>
+                </div>
+                
+                <input type="submit" class="btn" value="Sim, quero fechar minha conta">
+            </form>
+            
+        </div>
+        
 </body>
 </html>

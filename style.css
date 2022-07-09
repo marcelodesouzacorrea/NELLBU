@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: aller,sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.container{
+    width: 65%;
+    margin: 0 auto;
+}
+h1{
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+/* caixa */
+.caixa{
+    width: 100%;
+    border-left: 2px solid red;
+    border-top: 1px solid rgb(194, 190, 190);
+    border-right: 1px solid rgb(194, 190, 190);
+    border-bottom: 1px solid rgb(194, 190, 190);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.subtitulo{
+    margin-bottom: 15px;
+}
+
+/* formulario */
+form{
+    margin-top: 50px;
+}
+.formulario{
+    margin-bottom:50px;
+}
+.texto-select{
+    margin-bottom: 5px;
+}
+select{
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(114, 5, 5);
+}
+.select{
+    margin-bottom: 10px;
+}
+
+/* textarea */
+textarea{
+    width: 100%;
+}
+textarea::placeholder {
+    padding: 10px;
+    
+}
+/* btn */
+.btn{margin-left: 75%;
+    min-width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(189, 189, 188);
+    color: #fff;
+}
+.btn:hover{
+    background-color: rgb(139, 137, 137);
+}
