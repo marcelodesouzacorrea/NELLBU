@@ -29,11 +29,11 @@
                 <div class="formulario">
                         <p class="texto-select">Motivo do fechamento</p>
                     <div class="select">
-                        <select name="" id="">
-                            <option value="">-- Escolha uma razão --</option>
-                            <option value="" class="opcao">OPÇÃO 1</option>
-                            <option value="" class="opcao">OPÇÃO 2</option>
-                            <option value="" class="opcao">OPÇÃO 3</option>
+                        <select required name="selecao" id="selecao" onchange="func()">
+                            <option value="" selected>-- Escolha uma razão --</option>
+                            <option value="opcao1" class="opcao">OPÇÃO 1</option>
+                            <option value="opcao2" class="opcao">OPÇÃO 2</option>
+                            <option value="opcao3" class="opcao">OPÇÃO 3</option>
                         </select>
                     </div>
                     <span style="color:red;";>Esse campo é obrigatório.</span>
@@ -42,14 +42,33 @@
                 <div class="formulario">
                     <p class="subtitulo">Comentários: Por favor, diga os motivos pelos quais decidiu encerrar sua conta e/ou nos deixe sugestões para melhoras que você acredita que possamos implementar na NellBux.</p>
                     <div class="textarea">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="-- Escolha uma razão --"></textarea>
+                        <textarea name="" id="texto" cols="30" rows="10" placeholder="-- Escolha uma razão --" onchange="func()"></textarea>
                     </div>
                 </div>
                 
-                <input type="submit" class="btn" value="Sim, quero fechar minha conta">
+                <input type="submit" id="btn" value="Sim, quero fechar a minha conta." disabled>
+                
             </form>
+            <script>
+                function func(){
+                   var proximo = document.querySelector("input");
+                   
+                   var selecao = document.getElementById("selecao");
+                   var value = selecao.options[selecao.selectedIndex].value;
+                    console.log(value); // pt
+          
+                   var texto = document.getElementById("texto").value;
+                   if (texto.length >=1 && value != "")  {
+                      console.log("ok");
+                      proximo.disabled = false;
+                      proximo.style.backgroundColor = "#F3992E";
+                   }
+                }
+                
+             </script>
             
         </div>
+        
         
 </body>
 </html>
