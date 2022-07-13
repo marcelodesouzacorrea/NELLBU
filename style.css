@@ -59,14 +59,22 @@ textarea::placeholder {
     
 }
 /* btn */
-.btn{margin-left: 75%;
-    min-width: 25%;
+#btn[disabled]{
+    background-color: rgb(182, 180, 180);
+}
+#btn{
+    width: 25%;
     padding: 10px;
     border-radius: 10px;
-    outline: none;
-    background-color: rgb(189, 189, 188);
-    color: #fff;
+    border: none;
+    color: #fff;margin-left: 75%;
 }
-.btn:hover{
-    background-color: rgb(139, 137, 137);
-}
+input{
+    margin-right: 50%;
+}   
+  
+   
+   
+
+
+
