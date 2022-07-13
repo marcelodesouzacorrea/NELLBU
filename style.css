@@ -68,6 +68,7 @@ textarea::placeholder {
     border-radius: 10px;
     border: none;
     color: #fff;margin-left: 75%;
+    cursor: pointer;
 }
 input{
     margin-right: 50%;
